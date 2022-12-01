@@ -12,7 +12,7 @@
                 Maximum="100"
                 Value="20"
                 />
-        <TextBlock x:Name="tBlock" FontSize="{Binding ElementName=slider, Path=Value}" Foreground="{Binding ElementName=cBox , Path=Text}" >Rozmiar</TextBlock>
+        <TextBlock x:Name="tBlock" FontSize="{Binding ElementName=slider, Path=Value}" Foreground="{Binding ElementName=cBox , Path=Text , UpdateSourceTrigger=LostFocus}" >Rozmiar</TextBlock>
         <TextBox x:Name="tbox2"></TextBox>
         <TextBlock x:Name="tBlock2" Text="{Binding ElementName=tbox2, Path=Text}" Foreground="{Binding ElementName=cBox , Path=Text}"></TextBlock>
         <ComboBox x:Name="cBox">
@@ -32,7 +32,7 @@
             IsSnapToTickEnabled="true"
             TickFrequency="1"
             x:Name="slajder"/>
-        <TextBox Text="{Binding ElementName=slajder , Path= Value }"/>
+        <TextBox Text="{Binding ElementName=slajder , Path= Value , UpdateSourceTrigger=PropertyChanged}"/>
 
     </StackPanel>
 </Window>

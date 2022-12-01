@@ -21,7 +21,7 @@ namespace WpfApp3
     {
         public Window2()
         {
-            dsada
+            
             InitializeComponent();
         }
     }

@@ -21,3 +21,5 @@ C:\Users\admin2\source\repos\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\refint\Wpf
 C:\Users\admin2\source\repos\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\WpfApp3.pdb
 C:\Users\admin2\source\repos\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\WpfApp3.genruntimeconfig.cache
 C:\Users\admin2\source\repos\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\ref\WpfApp3.dll
+C:\Users\admin2\source\repos\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\Window2.g.cs
+C:\Users\admin2\source\repos\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\Window2.baml

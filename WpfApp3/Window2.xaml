@@ -6,7 +6,33 @@
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800">
-    <Grid>
+    <StackPanel>
+        <Slider x:Name="slider" 
+                Minimum="10"
+                Maximum="100"
+                Value="20"
+                />
+        <TextBlock x:Name="tBlock" FontSize="{Binding ElementName=slider, Path=Value}" Foreground="{Binding ElementName=cBox , Path=Text}" >Rozmiar</TextBlock>
+        <TextBox x:Name="tbox2"></TextBox>
+        <TextBlock x:Name="tBlock2" Text="{Binding ElementName=tbox2, Path=Text}" Foreground="{Binding ElementName=cBox , Path=Text}"></TextBlock>
+        <ComboBox x:Name="cBox">
+            <ComboBoxItem Content="red" />
+            <ComboBoxItem Content="green"/>
+            <ComboBoxItem Content="white"/>
+            <ComboBoxItem Content="purple"/>
+        </ComboBox>
         
-    </Grid>
+        <TextBlock Text="Tu"/>
+        <TextBox x:Name="name1" Text="{Binding ElementName=name2 , Path=Text , UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox x:Name="name2" />
+
+        <Slider
+            Minimum="0"
+            Maximum="100"
+            IsSnapToTickEnabled="true"
+            TickFrequency="1"
+            x:Name="slajder"/>
+        <TextBox Text="{Binding ElementName=slajder , Path= Value }"/>
+
+    </StackPanel>
 </Window>
